@@ -1,0 +1,99 @@
+h1 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 40px;
+    display: flexbox;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+h5{
+    font-size: 20px;
+    text-align: center; 
+    padding: 5px; 
+}
+
+h6 {
+    padding-right: 500px;
+}
+
+body, a {
+    background-color:#22311d;
+    color: #E8C7C8;
+    font-family: Trebuchet MS, Verdana, sans-serif;;
+
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    margin: 5px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 5vw);
+    gap: 20px;
+}
+
+#header {
+    text-align: left;
+    margin: 20px;
+}
+
+#color-button {
+    height:30px;
+    width:70px;
+    background-color: #581817;
+    color: #E8C7C8;
+}
+
+.boxed {
+    border: 5px dotted #E8C7C8;
+    margin: 50px;
+    padding: 25px;
+    margin-bottom: 70px;
+    display: flex;
+}
+
+.right {
+    padding-left: 20px;
+}
+
+.down {
+    padding-bottom: 20px;
+}
+
+.inline {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Does the changing color*/
+.color img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all 1s ease;
+    }
+    
+.color img:hover{
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+}
+
+
+
+

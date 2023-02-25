@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<head>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="author" content="Angela Feng">
+    <meta name="title" content="Angela's Personal Website">
+    <script src="https://kit.fontawesome.com/6eb1888503.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <h2 id="header">Angela Feng &#10084 </h2>
+    <div class="boxed">
+        <div>
+            <img src="Angela_Feng.jpg", alt="picture of a girl smiling at camera", width="375", height="375">
+        </div>
+        <div class="right">
+            <h1>
+                Angela Feng 
+            </h1>
+            <h4>
+                Hi! I was born and raised in San Francisco and am currently a junior at UC 
+                Berkeley studying computer science and data science! In my free time, I like 
+                to take naps, listen to music (send me music recs!), and have recently 
+                gotten into 3d origami! Take a look at some 3d origamis I made below!
+            </h4>
+            <div class="inline">
+                <h6>
+                    *Hover over the images below for a secret suprise!             
+                </h6>
+                <button id="color-button" onclick="changeColor()">
+                    Color
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery boxed color">
+        <div>
+            <img class="down" src="pinkpenguin.png", alt="picture of 2 3d pink penguins", width="300", height="300">
+            <img src="purplepenguin.png", alt="picture of a 3d purple penguins", width="300", height="300">
+        </div>
+        <div>
+            <img class="down" src="minions.png", alt="picture of 3 3d minions", width="300", height="300">
+            <img src="winnie.png", alt="picture of a 3d winnie", width="300", height="300">
+        </div>
+        <div>
+            <img class="down" src="puppy.jpg", alt="picture of a 3d puppy", width="300", height="300">
+            <img src="swan.png", alt="picture of a 3d swan", width="300", height="300">
+        </div>
+        <div>
+            <img class="down" src="icebear.png", alt="picture of a 3d polar bear", width="300", height="300">
+            <img src="flowers.png", alt="picture of a 3d purple and pink roses", width="300", height="300">
+        </div>
+    </div>
+
+    <div>
+        <h3>
+            Let's Connect! &#10084
+        </h3>
+        <h5>
+            <i class="fa fa-github"></i>
+            github: <a href="https://github.com/anfeng2" target="_blank">anfeng2</a>
+            <br>
+            <i class="fa fa-envelope"></i>
+            email: anfeng2@berkeley.edu
+            <br>
+            <i class="fa fa-instagram"></i>
+            ig: angelafeng_
+        </h5>
+    </div>
+
+    <div>
+        <form id="form">
+            <label>
+                How was your day?
+            </label>
+            <br>
+            <input type="radio" id="good" name="day" value="good">
+            <label for="good">good</label>
+            <input type="radio" id="ok" name="day" value="ok">
+            <label for="ok">ok</label>
+            <input type="radio" id="bad" name="day" value="bad">
+            <label for="bad">bad</label>
+            <br>
+            <input type = "submit" value ="Submit" onclick="respond()">
+        </form>
+    </div>
+
+    <script>
+        function changeColor() {
+            var elements = document.getElementsByTagName("img") // get all elements
+            for(var i = 0; i < elements.length; i++){
+                elements[i].style.filter = "grayscale(0%)";
+            }
+        }
+
+        function respond() {
+            var x = document.querySelector('input[name="day"]:checked').value;
+            if (x == "good") {
+                alert("omg yayyyyy :)");
+            } else if (x == "ok") {
+                alert("awww");
+            } else if (x == "bad") {
+                alert("oh nooo :( tomorrow will be better!");
+            }
+        }
+        </script>
+  </body>
+
+
